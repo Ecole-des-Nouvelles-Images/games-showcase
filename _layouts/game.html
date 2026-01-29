@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<section class="game-hero">
+  <img src="{{ page.cover }}" alt="{{ page.title }}">
+</section>
+
+<section class="game-content">
+  <h1>{{ page.title }}</h1>
+
+  <p class="game-pitch">
+    {{ content }}
+  </p>
+
+  <div class="game-meta">
+    <div>
+      <strong>Plateforme</strong><br>
+      <span class="pill {{ page.platform }}">{{ page.platform }}</span>
+    </div>
+
+    <div>
+      <strong>Équipe</strong><br>
+      {% for member in page.team %}
+        {{ member }}<br>
+      {% endfor %}
+    </div>
+  </div>
+
+  <a class="btn primary"
+     href="{{ page.download }}"
+     target="_blank">
+    🎮 Télécharger la build
+  </a>
+</section>

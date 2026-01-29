@@ -1,0 +1,9 @@
+<a class="game-card" href="{{ game.url }}">
+  <img src="{{ game.cover }}" alt="{{ game.title }}">
+
+  <div class="card-overlay">
+    <span class="pill {{ game.platform }}">{{ game.platform }}</span>
+    <h2>{{ game.title }}</h2>
+    <span class="card-date">{{ game.date }}</span>
+  </div>
+</a>

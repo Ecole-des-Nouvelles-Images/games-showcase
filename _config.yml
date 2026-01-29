@@ -1,0 +1,18 @@
+title: "Showcase Jeux Vidéo"
+description: "Vitrine des projets étudiants – École des Nouvelles Images"
+baseurl: ""
+url: ""
+
+markdown: kramdown
+
+collections:
+  games:
+    output: true
+    permalink: /games/:name/
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+exclude:
+  - README.md
