@@ -1,7 +1,7 @@
 :root {
-  --bg: #0e1014;
+  --bg: #0b0d12;
   --bg-soft: #151821;
-  --text: #e6e6e6;
+  --text: #f1f1f1;
   --muted: #9aa0b3;
   --accent: #ff4d5a;
 }
@@ -13,48 +13,57 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, sans-serif;
-  background: var(--bg);
+  background: radial-gradient(circle at top, #121622, var(--bg));
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+/* ===== HEADER ===== */
 .site-header {
   text-align: center;
-  padding: 4rem 1.5rem 3rem;
-  border-bottom: 1px solid #222;
+  padding: 5rem 1.5rem 4rem;
 }
 
 .site-header h1 {
   margin: 0;
-  font-size: 2.6rem;
+  font-size: 3rem;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   color: var(--muted);
+  font-size: 1.05rem;
 }
 
+/* ===== MAIN ===== */
 .journal {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1.5rem 4rem;
 }
 
+/* ===== ENTRY CARD ===== */
 .entry {
+  background: linear-gradient(180deg, #161a27, #0f121b);
+  border-radius: 22px;
+  padding: 2.8rem;
   margin-bottom: 4.5rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid #222;
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
+/* ===== ENTRY HEADER ===== */
 .entry-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .entry-header h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 0;
 }
 
@@ -64,65 +73,84 @@ body {
   white-space: nowrap;
 }
 
+/* ===== TEXT ===== */
 .entry-pitch {
+  font-size: 1.05rem;
   font-style: italic;
-  color: #d0d3e0;
-  margin: 1.2rem 0 1.8rem;
+  color: #d5d8e6;
+  margin: 1.5rem 0 2.2rem;
 }
 
+/* ===== IMAGE ===== */
 .entry-image {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
-  background: var(--bg-soft);
+  border-radius: 16px;
+  margin-bottom: 2.2rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.55);
 }
 
+/* ===== META ===== */
 .entry-meta {
-  margin-bottom: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.2rem;
+}
+
+.meta-right {
+  text-align: right;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
-.entry-download {
-  display: inline-block;
-  padding: 0.8rem 1.4rem;
-  background: var(--accent);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-}
-
-.entry-download:hover {
-  opacity: 0.9;
-}
-
-.site-footer {
-  text-align: center;
-  padding: 2rem 1rem 3rem;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
-
-.badge {
-  display: inline-block;
-  padding: 0.25rem 0.6rem;
+/* ===== PLATFORM TAG ===== */
+.platform-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.3rem;
   border-radius: 999px;
   font-size: 0.75rem;
-  font-weight: 600;
-  margin-top: 0.3rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.badge.windows {
-  background: #0078d4;
+.platform-tag.windows {
+  background: linear-gradient(135deg, #0078d4, #005fa3);
   color: white;
 }
 
-.badge.android {
-  background: #3ddc84;
-  color: #0b3d2e;
+.platform-tag.android {
+  background: linear-gradient(135deg, #3ddc84, #1fa66a);
+  color: #06351f;
 }
 
-.badge.web {
-  background: #f59e0b;
-  color: #3a2500;
+/* ===== DOWNLOAD BUTTON ===== */
+.entry-download {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 1.1rem 2.4rem;
+  background: linear-gradient(135deg, var(--accent), #ff2f55);
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  box-shadow: 0 16px 40px rgba(255,77,90,0.45);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.entry-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 55px rgba(255,77,90,0.6);
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  text-align: center;
+  padding: 3rem 1.5rem 4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
