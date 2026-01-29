@@ -1,9 +1,10 @@
-title: "Showcase Jeux Vidéo"
+title: "ENSI Showcase Jeux Vidéo"
 description: "Vitrine des projets étudiants – École des Nouvelles Images"
-baseurl: ""
-url: ""
 
-markdown: kramdown
+url: "https://ecole-des-nouvelles-images.github.io"
+baseurl: "/games-showcase"
+
+locale: fr
 
 collections:
   games:
