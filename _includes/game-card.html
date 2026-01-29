@@ -4,6 +4,6 @@
   <div class="card-overlay">
     <span class="pill {{ game.platform }}">{{ game.platform }}</span>
     <h2>{{ game.title }}</h2>
-    <span class="card-date">{{ game.date }}</span>
+    <span class="card-date">{{ game.date | date: "%B %Y" }}</span>
   </div>
 </a>
