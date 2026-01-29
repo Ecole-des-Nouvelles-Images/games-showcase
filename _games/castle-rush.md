@@ -1,6 +1,6 @@
 ---
 title: Castle Rush
-date: 2025-05
+date: 2025-05-01
 platform: android
 cover: /assets/images/castle-rush/cover.png
 download: https://github.com/Ecole-des-Nouvelles-Images/2025-Mobile-Defenseless-Tower/releases/latest
