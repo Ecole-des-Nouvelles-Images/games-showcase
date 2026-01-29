@@ -1,6 +1,6 @@
 ---
 title: Ball Blop Battle
-date: Décembre 2024
+date: 2024-12
 platform: windows
 cover: /assets/images/ball-blop-battle/cover.png
 download: https://github.com/Ecole-des-Nouvelles-Images/2024-Arcade-2D-Ball-Blop-Battle/releases/latest
