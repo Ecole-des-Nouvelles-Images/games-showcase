@@ -2,106 +2,253 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Projets Jeux Vidéo – École des Nouvelles Images</title>
+  <title>Showcase — Projets Jeux Vidéo | École des Nouvelles Images</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="site-header">
-  <h1>🎮 Projets Jeux Vidéo</h1>
-  <p class="subtitle">
-    Sélection de projets étudiants — École des Nouvelles Images
-  </p>
-</header>
+  <!-- BACKGROUND DECOR -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+  </div>
 
-<main class="journal">
-
-  <!-- ===================== JEU ===================== -->
-  <article class="entry">
-    <header class="entry-header">
-      <h2>Ball Blop Battle</h2>
-      <span class="entry-date">Décembre 2024</span>
-    </header>
-
-    <p class="entry-pitch">
-      Ball Blop Battle est un jeu de sport et d’action arcade en vue latérale,
-      opposant un joueur à un adversaire dans un match de volley-ball revisité,
-      nerveux et accessible.
-    </p>
-
-    <img
-      src="images/ball_blop_battle/cover.png"
-      alt="Ball Blop Battle"
-      class="entry-image"
-    />
-
-    <div class="entry-meta">
-      <div class="meta-left">
-        <span class="platform-tag windows">🖥️ Windows</span>
-      </div>
-
-      <div class="meta-right">
-        <strong>Équipe</strong><br>
-        Marion DUBREIL · Calvin OVIDE · Hugo ISAMBART
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">ENI</div>
+      <div class="brand-text">
+        <div class="brand-title">Showcase Jeux Vidéo</div>
+        <div class="brand-sub">École des Nouvelles Images</div>
       </div>
     </div>
 
-    <a
-      class="entry-download"
-      href="https://github.com/Ecole-des-Nouvelles-Images/2024-Arcade-2D-Ball-Blop-Battle/releases/latest"
-      target="_blank"
-    >
-      🎮 Télécharger le jeu
-    </a>
-  </article>
-  <!-- ===================== FIN JEU ===================== -->
+    <nav class="nav">
+      <a href="#games">Jeux</a>
+      <a href="#about">À propos</a>
+    </nav>
+  </header>
 
-  <!-- ===================== JEU ===================== -->
-  <article class="entry">
-    <header class="entry-header">
-      <h2>Castle Rush</h2>
-      <span class="entry-date">Mai 2025</span>
-    </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="kicker">PROMOS 2024–2025</p>
+      <h1>Une vitrine premium des projets étudiants</h1>
+      <p class="lead">
+        Une sélection de jeux conçus en conditions de production :
+        direction artistique, gameplay, pipeline et builds jouables.
+      </p>
 
-    <p class="entry-pitch">
-      Castle Rush est un tower defense inversé dans lequel le joueur incarne
-      l’assaillant. Améliorez vos troupes, adaptez vos stratégies et traversez
-      des terrains procéduraux pour capturer un maximum de châteaux.
-    </p>
-
-    <img
-      src="images/castle_rush/cover.png"
-      alt="Castle Rush"
-      class="entry-image"
-    />
-
-    <div class="entry-meta">
-      <div class="meta-left">
-        <span class="platform-tag android">📱 Android</span>
+      <div class="hero-cta">
+        <a class="btn primary" href="#games">Découvrir les jeux</a>
+        <a class="btn ghost" href="https://github.com/Ecole-des-Nouvelles-Images" target="_blank">Voir l’organisation GitHub</a>
       </div>
 
-      <div class="meta-right">
-        <strong>Équipe</strong><br>
-        Julien Durand · Calvin Ovide · Sasha Bilore · Regina Lukoyanova
+      <div class="hero-stats" aria-label="Chiffres clés">
+        <div class="stat">
+          <div class="stat-value">2</div>
+          <div class="stat-label">Projets affichés</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">2024–2025</div>
+          <div class="stat-label">Promos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">Windows / Android</div>
+          <div class="stat-label">Plateformes</div>
+        </div>
       </div>
     </div>
 
-    <a
-      class="entry-download"
-      href="https://github.com/Ecole-des-Nouvelles-Images/2025-Mobile-Defenseless-Tower/releases/latest"
-      target="_blank"
-    >
-      📱 Télécharger l’APK
-    </a>
-  </article>
-  <!-- ===================== FIN JEU ===================== -->
+    <div class="hero-panel" aria-hidden="true">
+      <div class="panel-card">
+        <div class="panel-title">Sélection</div>
+        <div class="panel-line"></div>
+        <div class="panel-mini">
+          <div class="mini-pill">🖥️ Windows</div>
+          <div class="mini-pill">📱 Android</div>
+          <div class="mini-pill">🎮 Builds</div>
+          <div class="mini-pill">🧑‍🤝‍🧑 Équipes</div>
+        </div>
+        <div class="panel-note">
+          Fiches “press-kit” : visuels + pitch + équipe + build.
+        </div>
+      </div>
+    </div>
+  </section>
 
-</main>
+  <!-- GAMES -->
+  <main id="games" class="wrap">
+    <div class="section-head">
+      <h2>Jeux</h2>
+      <p>Galerie de covers. Ouvre une fiche pour voir les détails et télécharger la build.</p>
+    </div>
 
-<footer class="site-footer">
-  <p>© École des Nouvelles Images — Formation Game Programming</p>
-</footer>
+    <div class="grid">
+
+      <!-- GAME CARD (DETAILS) -->
+      <details class="game">
+        <summary class="game-cover">
+          <div class="cover-media">
+            <img src="images/ball_blop_battle/cover.png" alt="Ball Blop Battle — cover" />
+          </div>
+
+          <div class="cover-overlay">
+            <div class="badge-row">
+              <span class="pill windows">🖥️ Windows</span>
+              <span class="pill date">Déc. 2024</span>
+            </div>
+
+            <div class="cover-title">Ball Blop Battle</div>
+            <div class="cover-sub">Arcade sport & action — 2D latéral</div>
+
+            <div class="cover-cta">
+              <span class="hint">Clique pour ouvrir la fiche</span>
+              <span class="chev" aria-hidden="true">▾</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="game-sheet">
+          <div class="sheet-left">
+            <h3>Ball Blop Battle</h3>
+            <p class="sheet-pitch">
+              Ball Blop Battle est un jeu de sport et d'action arcade en vue latérale,
+              opposant un joueur à un adversaire dans un match de volley-ball revisité.
+            </p>
+
+            <div class="sheet-meta">
+              <div class="meta-block">
+                <div class="meta-label">Plateforme</div>
+                <div class="meta-value"><span class="pill windows">🖥️ Windows</span></div>
+              </div>
+
+              <div class="meta-block">
+                <div class="meta-label">Équipe</div>
+                <div class="meta-value">
+                  Marion DUBREIL — Game Artist<br/>
+                  Calvin OVIDE — Game Artist<br/>
+                  Hugo ISAMBART — Game Developer
+                </div>
+              </div>
+            </div>
+
+            <div class="sheet-actions">
+              <a class="btn primary" href="https://github.com/Ecole-des-Nouvelles-Images/2024-Arcade-2D-Ball-Blop-Battle/releases/latest" target="_blank">
+                🎮 Télécharger la build
+              </a>
+              <a class="btn ghost" href="https://github.com/Ecole-des-Nouvelles-Images/2024-Arcade-2D-Ball-Blop-Battle" target="_blank">
+                Code / Repo
+              </a>
+            </div>
+          </div>
+
+          <div class="sheet-right" aria-label="Visuel">
+            <img src="images/ball_blop_battle/cover.png" alt="Ball Blop Battle — visuel" />
+          </div>
+        </div>
+      </details>
+
+      <!-- GAME CARD (DETAILS) -->
+      <details class="game">
+        <summary class="game-cover">
+          <div class="cover-media">
+            <img src="images/castle_rush/cover.png" alt="Castle Rush — cover" />
+          </div>
+
+          <div class="cover-overlay">
+            <div class="badge-row">
+              <span class="pill android">📱 Android</span>
+              <span class="pill date">Mai 2025</span>
+            </div>
+
+            <div class="cover-title">Castle Rush</div>
+            <div class="cover-sub">Tower defense inversé — attaquer plutôt que défendre</div>
+
+            <div class="cover-cta">
+              <span class="hint">Clique pour ouvrir la fiche</span>
+              <span class="chev" aria-hidden="true">▾</span>
+            </div>
+          </div>
+        </summary>
+
+        <div class="game-sheet">
+          <div class="sheet-left">
+            <h3>Castle Rush</h3>
+            <p class="sheet-pitch">
+              Castle Rush est un tower defense où le joueur ne contrôle pas les défenses
+              mais les attaquants. Améliorez vos troupes et vos sorts, traversez des terrains
+              procéduraux et capturez un maximum de châteaux.
+            </p>
+
+            <div class="sheet-meta">
+              <div class="meta-block">
+                <div class="meta-label">Plateforme</div>
+                <div class="meta-value"><span class="pill android">📱 Android</span></div>
+              </div>
+
+              <div class="meta-block">
+                <div class="meta-label">Équipe</div>
+                <div class="meta-value">
+                  Durand Julien — Product owner, développeur<br/>
+                  Ovide Calvin — Lead artiste<br/>
+                  Bilore Sasha — Artiste<br/>
+                  Lukoyanova Regina — Artiste
+                </div>
+              </div>
+
+              <div class="meta-block">
+                <div class="meta-label">Note</div>
+                <div class="meta-value">
+                  Sur Android, l’installation d’un APK peut demander d’autoriser “sources inconnues”.
+                </div>
+              </div>
+            </div>
+
+            <div class="sheet-actions">
+              <a class="btn primary" href="https://github.com/Ecole-des-Nouvelles-Images/2025-Mobile-Defenseless-Tower/releases/latest" target="_blank">
+                📱 Télécharger l’APK
+              </a>
+              <a class="btn ghost" href="https://github.com/Ecole-des-Nouvelles-Images/2025-Mobile-Defenseless-Tower" target="_blank">
+                Code / Repo
+              </a>
+            </div>
+          </div>
+
+          <div class="sheet-right" aria-label="Visuel">
+            <img src="images/castle_rush/cover.png" alt="Castle Rush — visuel" />
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="wrap about-inner">
+      <h2>À propos</h2>
+      <p>
+        Cette vitrine présente une sélection de projets réalisés par les étudiants.
+        Chaque fiche propose un pitch, l’équipe, et une build jouable.
+      </p>
+      <p class="about-muted">
+        Astuce : pour ajouter un jeu, duplique un bloc <code>&lt;details class="game"&gt;</code>.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>© École des Nouvelles Images</div>
+      <div class="footer-links">
+        <a href="#games">Jeux</a>
+        <a href="#about">À propos</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
