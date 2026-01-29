@@ -1,5 +1,5 @@
-<a class="game-card" href="{{ game.url }}">
-  <img src="{{ game.cover }}" alt="{{ game.title }}">
+<a class="game-card" href="{{ game.url | relative_url }}">
+  <img src="{{ game.cover | relative_url }}" alt="{{ game.title }}">
 
   <div class="card-overlay">
     <span class="pill {{ game.platform }}">{{ game.platform }}</span>
