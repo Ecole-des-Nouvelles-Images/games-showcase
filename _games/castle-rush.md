@@ -7,5 +7,4 @@ download: https://github.com/Ecole-des-Nouvelles-Images/2025-Mobile-Defenseless-
 team: Julien Durand (Dev), Calvin Ovide (Art), Sasha Bilore (Art), Regina Lukoyanova (Art)
 ---
 
-Castle Rush est un tower defense inversé où le joueur contrôle les attaquants.
-Chaque terrain est procédural et demande une adaptation stratégique constante.
+Castle Rush est un tower defense inversé où le joueur contrôle les attaquants. Chaque terrain est procédural et demande une adaptation stratégique constante.

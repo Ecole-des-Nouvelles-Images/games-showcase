@@ -7,5 +7,4 @@ download: https://github.com/Ecole-des-Nouvelles-Images/2024-Arcade-2D-Ball-Blop
 team: Hugo Isambart (Dev), Marion Dubreil (Art), Calvin Ovide (Art) 
 ---
 
-Ball Blop Battle est un jeu de sport et d’action arcade en vue latérale,
-opposant un joueur à un adversaire dans un match de volley-ball revisité.
+Ball Blop Battle est un jeu de sport et d’action arcade en vue latérale, opposant un joueur à un adversaire dans un match de volley-ball revisité.

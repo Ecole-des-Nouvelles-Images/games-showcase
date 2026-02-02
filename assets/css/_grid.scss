@@ -1,6 +1,6 @@
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(clamp(300px, 40vw, 500px), 1fr));
   gap: 1.5rem;
   padding: 2rem 1rem;
 }
