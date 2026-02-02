@@ -9,17 +9,17 @@
       {{ game.title }}
     </h2>
 
-    <p class="card-description">
-      {{ game.excerpt | strip_html | truncate: 300 }}
-    </p>
+    <div class="card-content">
+      <p class="card-description">
+        {{ game.excerpt | strip_html | truncate: 300 }}
+      </p>
 
-    {% if game.team %}
-    <ul class="card-team">
-      {% for member in game.team %}
-      <li>{{ member }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
+      {% if game.team %}
+      <p class="card-team">
+        {{ game.team | join: " · " }}
+      </p>
+      {% endif %}
+    </div>
 
     <a class="btn primary download-btn" href="{{ game.download }}" target="_blank">
       Télécharger

@@ -75,7 +75,7 @@ body {
 ================================ */
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   padding: 2rem 1rem;
 }
@@ -108,7 +108,6 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 
   background: linear-gradient(
                   to top,
@@ -142,18 +141,34 @@ body {
   font-weight: 800;
 }
 
+.card-content {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  overflow: hidden;
+}
+
 .card-description {
   font-size: 0.9rem;
   color: rgba(255,255,255,0.85);
-  margin-bottom: 1rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-team {
-  margin: 0 0 0.8rem;
-  padding: 0;
-  list-style: none;
   font-size: 0.75rem;
   color: rgba(255,255,255,0.75);
+  line-height: 1.3;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .card-team li {
@@ -163,6 +178,7 @@ body {
 /* ===============================
    BADGES
 ================================ */
+
 .pill {
   display: inline-block;
   align-self: flex-start;
@@ -204,7 +220,7 @@ body {
 }
 
 .download-btn {
-  margin-top: 0.6rem;
+  margin-top: auto;
   padding: 0.85rem 1.5rem;
   font-size: 1rem;
   font-weight: 800;
@@ -224,14 +240,6 @@ body {
    MOBILE BEHAVIOR
 ================================ */
 @media (hover: none), (max-width: 768px) {
-  .card-description {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    font-size: 0.85rem;
-  }
-
   .card-image {
     transform: none !important;
   }
