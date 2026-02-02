@@ -7,4 +7,4 @@ download: https://github.com/Ecole-des-Nouvelles-Images/2025-Mobile-Drive-N-Shoo
 team: Léna De Luca , Hugo Baron, Hugo Isambart, Alexandre Renaux
 ---
 
-Drive'N'Shoot est un jeu de course arcade mobile où le joueur contrôle un pickup truck armé pour avancer à travers des checkpoints tout en éliminant des ennemis dans un paysage post-apocalyptique. :contentReference[oaicite:0]{index=0}
+Drive'N'Shoot est un jeu de course arcade mobile où le joueur contrôle un pickup truck armé pour avancer à travers des checkpoints tout en éliminant des ennemis dans un paysage post-apocalyptique.

@@ -7,4 +7,4 @@ download: https://github.com/Ecole-des-Nouvelles-Images/2024-Top-Down-3D-Turbo-T
 team: Giulia Haut Perucca, Michael Elie, Noah Miliani
 ---
 
-Turbo Tortue est un jeu d’action 3D en vue top-down pour PC, mettant en scène une tortue robotique qui poursuit et élimine des joueurs incarnant des fleurs mutantes dans un environnement multijoueur local. :contentReference[oaicite:5]{index=5}
+Turbo Tortue est un jeu d’action 3D en vue top-down pour PC, mettant en scène une tortue robotique qui poursuit et élimine des joueurs incarnant des fleurs mutantes dans un environnement multijoueur local.

@@ -7,4 +7,4 @@ download: https://github.com/Ecole-des-Nouvelles-Images/2024-Arcade-2D-Goat-Race
 team: Baron Hugo, Durand Julien, Bilore Sasha
 ---
 
-Goat Race est un jeu de course en arcade opposant des chèvres dotées de statistiques et d’objets de bonus, où l'objectif est d’atteindre la ligne d’arrivée en premier en utilisant des stratégies de course et de puissance. :contentReference[oaicite:1]{index=1}
+Goat Race est un jeu de course en arcade opposant des chèvres dotées de statistiques et d’objets de bonus, où l'objectif est d’atteindre la ligne d’arrivée en premier en utilisant des stratégies de course et de puissance.

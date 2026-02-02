@@ -7,4 +7,4 @@ download: https://github.com/Ecole-des-Nouvelles-Images/2024-Mobile-Stray-Sorcer
 team: Christopher Barrera, Camilia Filhon, Maxime Souday, Charlie Boyer
 ---
 
-Stray Sorcerer est un jeu mobile 3D top-down où le joueur incarne un sorcier perdu qui doit survivre et s’échapper d’un labyrinthe rempli de monstres. :contentReference[oaicite:4]{index=4}
+Stray Sorcerer est un jeu mobile 3D top-down où le joueur incarne un sorcier perdu qui doit survivre et s’échapper d’un labyrinthe rempli de monstres.
