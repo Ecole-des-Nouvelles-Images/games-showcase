@@ -1,0 +1,42 @@
+.btn {
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn.primary {
+  background: $accent;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.download-btn {
+  margin-top: auto;
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 14px;
+}
+
+.download-btn:hover {
+  transform: translateY(-1px);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+  opacity: 0.95;
+}
+
+/* Mobile — buttons */
+@media (max-width: 768px) {
+  .btn {
+    padding: 0.7rem 1.1rem;
+    font-size: 0.85rem;
+  }
+}

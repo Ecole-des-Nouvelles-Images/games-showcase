@@ -1,0 +1,39 @@
+.site-header {
+  padding: 2rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: block;
+  height: 48px;
+  width: auto;
+
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.brand-text {
+  line-height: 1.2;
+}
+
+.brand-text small {
+  font-size: 0.75rem;
+  color: $muted;
+}
+
+/* Mobile — header */
+@media (max-width: 768px) {
+  .logo {
+    height: 36px;
+  }
+
+  .brand-text {
+    font-size: 0.9rem;
+  }
+}

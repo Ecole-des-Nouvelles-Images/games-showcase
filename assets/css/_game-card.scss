@@ -1,0 +1,87 @@
+.game-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: $bg;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+                  to top,
+                  rgba(0,0,0,0.85),
+                  rgba(0,0,0,0.25)
+  );
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.game-card:hover .card-image,
+.game-card:focus-within .card-image {
+  transform: scale(1.05);
+}
+
+.game-card:hover .card-overlay,
+.game-card:focus-within .card-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card-title {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.card-content {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  overflow: hidden;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-team {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.3;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* Mobile — game card */
+@media (hover: none), (max-width: 768px) {
+  .card-image {
+    transform: none !important;
+  }
+}

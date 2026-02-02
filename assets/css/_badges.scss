@@ -1,0 +1,18 @@
+.pill {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.pill.windows {
+  background: #0078d4;
+}
+
+.pill.android {
+  background: #3ddc84;
+  color: #06351f;
+}
