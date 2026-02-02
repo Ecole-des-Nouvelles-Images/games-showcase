@@ -11,7 +11,6 @@ vendor/
 
 # OS / IDE
 .DS_Store
-.idea/
 .vscode/
 
 # Logs
