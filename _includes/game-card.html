@@ -1,9 +1,28 @@
-<a class="game-card" href="{{ game.url | relative_url }}">
-  <img src="{{ game.cover | relative_url }}" alt="{{ game.title }}">
-
+<div class="game-card" tabindex="0">
+  <img src="{{ site.baseurl }}{{ game.cover }}" alt="{{ game.title }}" class="card-image">
   <div class="card-overlay">
-    <span class="pill {{ game.platform }}">{{ game.platform }}</span>
-    <h2>{{ game.title }}</h2>
-    <span class="card-date">{{ game.date | date: "%B %Y" }}</span>
+    <span class="pill {{ game.platform }}">
+      {{ game.platform }}
+    </span>
+
+    <h2 class="card-title">
+      {{ game.title }}
+    </h2>
+
+    <p class="card-description">
+      {{ game.excerpt | strip_html | truncate: 300 }}
+    </p>
+
+    {% if game.team %}
+    <ul class="card-team">
+      {% for member in game.team %}
+      <li>{{ member }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <a class="btn primary download-btn" href="{{ game.download }}" target="_blank">
+      Télécharger
+    </a>
   </div>
-</a>
+</div>

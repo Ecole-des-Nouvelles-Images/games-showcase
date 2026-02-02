@@ -1,0 +1,18 @@
+# Jekyll build output
+_site/
+
+# Jekyll cache
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
